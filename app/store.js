@@ -1,14 +1,24 @@
 import Car from "./Models/Car.js";
+import House from "./Models/House.js";
+import Job from "./Models/Jobs.js";
 console.log(1);
 
 let _state = {
   /** @type {Car[]} */
   cars: [
-    new Car({ make: "Tesla", model: "Cybertruck", year: 2020, price: 100000, img: "https://s3.amazonaws.com/images.gearjunkie.com/uploads/2019/11/tesla_pickup.png", description: "It's like living in the future, with 1 broken window." }),
-    new Car({ make: "Mystery", model: "Machine", year: 1987, price: 1000, img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/the-classic-mystery-machine-replica-van-built-by-jerry-news-photo-1587131341.jpg?crop=1.00xw:0.753xh;0,0.176xh&resize=1200:*", description: "Smells like meddling teenagers and a dog" }),
-    new Car({ make: "Jeep", model: "Wrangler", year: 1987, price: 1000, img: "https://vignette.wikia.nocookie.net/jurassicpark/images/e/e7/Jurassic-park-jeep3-1-.jpg/revision/latest/scale-to-width-down/340?cb=20090417212624", description: "Are those teeth marks?" })
+    new Car({ make: "Tesla", model: "Cybertruck", year: 2020, price: 100000, img: "/assets/warthog.png", description: "It's like living in the future, with 1 broken window." }),
+    new Car({ make: "Nissan", model: "Skyline GTR", year: 1998, price: 90000, img: "/assets/skyline.jpg", description: "Godzilla of the streets!" }),
+    new Car({ make: "Toyota", model: "LandCruiser", year: 1990, price: 30000, img: "/assets/fj80.jpg", description: "Takes a lickin Keeps on Ticking" })
   ],
-  houses: []
+  houses: [
+    new House({ bedroom: 2, sqft: 300, bath: 1, year: 1983, price: 10000, description: "Tends to draw like trailers towards it.", img: "/assets/trailer.jpeg" }),
+    new House({ bedroom: 5, sqft: 2000, bath: 3, year: 1964, price: 450000, description: "Take a second to smell the flowers every morning", img: "/assets/cabin.jpg" }),
+    new House({ bedroom: 7, sqft: 5000, bath: 4, year: 835, price: 1000000, description: "Fits anywhere, tends to draw like houses towards it.", img: "/assets/Xhorhas.jpg" })
+  ],
+  jobs: [
+    new Job({position: "Welder", description: "Be able to stack beads like a mad man!", wage: 30, img: "/assets "}), new Job({position: "Welder", description: "Be able to stack beads like a mad man!", wage: 30, img: "/assets/ "})
+  ]
+
 };
 
 class Store {
