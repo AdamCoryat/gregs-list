@@ -4,6 +4,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+.c-bg{
+  background-image: url("/assets/treasure.jpeg");
+  background-size: cover;
+  background-position: center;
+}
 
 main {
   flex-grow: 1
@@ -11,4 +16,7 @@ main {
 
 .text-shadow {
   filter: drop-shadow(3px 4px 3px black)
+}
+.grog-font{
+  font-family: 'Chilanka', cursive;
 }

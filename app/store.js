@@ -1,6 +1,6 @@
 import Car from "./Models/Car.js";
 import House from "./Models/House.js";
-import Job from "./Models/Jobs.js";
+import Job from "./Models/Job.js";
 console.log(1);
 
 let _state = {
@@ -16,7 +16,9 @@ let _state = {
     new House({ bedroom: 7, sqft: 5000, bath: 4, year: 835, price: 1000000, description: "Fits anywhere, tends to draw like houses towards it.", img: "/assets/Xhorhas.jpg" })
   ],
   jobs: [
-    new Job({position: "Welder", description: "Be able to stack beads like a mad man!", wage: 30, img: "/assets "}), new Job({position: "Welder", description: "Be able to stack beads like a mad man!", wage: 30, img: "/assets/ "})
+    new Job({position: "Welder", description: "Be able to stack beads like a mad man!", wage: 30, img: "/assets/welder.jpg"}), 
+    new Job({position: "Fiber Splicer", description: "Make light go places so good", wage: 100, img: "/assets/fiber.jpeg"}),
+    new Job({position: "Warehouse Worker", description: "Stack boxes like a champ", wage: 13, img: "/assets/warehouse.jpg"})
   ]
 
 };

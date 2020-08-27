@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/spacelab.css">
     <link rel="stylesheet" href="assets/style.css">
@@ -14,11 +15,13 @@
 <body>
     <header class="container-fluid bg-primary">
         <div class="row m-3">
-            <div class="col text-center text-light">
+            <div class="col text-center text-light grog-font">
                 <img src="/assets/grog.jpeg" alt="">
-                <h1>Grogs - List</h1>
+                <h1 class="grog-font">Grogs - List</h1>
                 <a name="Cars" id="" class="btn btn-primary" onclick="app.carsController.drawCars()" role="button">Cars</a>
-                <a name="Cars" id="" class="btn btn-primary" onclick="app.housesController.drawHouses()" role="button">Houses</a>
+                <a name="Houses" id="" class="btn btn-primary" onclick="app.housesController.drawHouses()" role="button">Houses</a>
+                <a name="Jobs" id="" class="btn btn-primary" onclick="app.jobsController.drawJobs()" role="button">Jobs</a>
+        
             </div>
         </div>
     </header>
@@ -27,10 +30,13 @@
             </div>
         </div>
         <div class="row" id="body">
+            <div class="col text-center grog-font d-flex justify-content-center"><h1>Grogs List!</h1>
+    </div>
+
         </div>
     </main>
     <footer class="container-fluid bg-primary">
-        <div class="row">
+        <div class="row" id="application">
             <div class="col text-center text-light">
                 <p>Made with ❤ by CodeWorks</p>
             </div>
@@ -39,5 +45,6 @@
 
     <script src="app/main.js" type="module"></script>
 </body>
+
 
 </html>
